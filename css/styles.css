@@ -5,3 +5,76 @@ body {
 h1, h2, li {
     color: #FFF;
 }
+
+h1, h2 {
+    font-family: "Jockey One";
+}
+
+.jockey-one-regular {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .jaldi-regular {
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .logo {
+    max-width: 200px;
+  }
+
+  .product {
+    width: 300px;
+  }
+  
+  .product-image {
+    max-width: 100%;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    border-radius: 50%;
+  }
+
+
+  .theater {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  nav, 
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display:block;
+  }
+
+  header{
+    position: relative;
+  }
+
+  nav{
+    position:absolute;
+    background:#35006a;
+    top: 0px;
+    left: 30px;
+  }
+
+  nav a {
+    display:block;
+    color: #FFF;
+    padding: 20px 30px;
+  }
+
