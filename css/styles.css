@@ -24,7 +24,8 @@ h1, h2 {
 
 
   .logo {
-    max-width: 200px;
+    max-width: 100px;
+    height: 50px;
   }
 
   .product {
@@ -52,29 +53,23 @@ h1, h2 {
     background-repeat: no-repeat;
   }
 
-  nav, 
-  #menu-checkbox {
-    display: none;
-  }
-
-  #menu-checkbox:checked ~ nav {
-    display:block;
-  }
-
+  
   header{
     position: relative;
   }
 
   nav{
-    position:absolute;
     background:#35006a;
     top: 0px;
     left: 30px;
   }
 
-  nav a {
-    display:block;
+  nav li {
+    display:inline-block;
     color: #FFF;
-    padding: 20px 30px;
   }
 
+
+  .image {
+    max-width: 20%;
+  }
