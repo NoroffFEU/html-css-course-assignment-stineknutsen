@@ -70,6 +70,16 @@ h1, h2 {
   }
 
 
-  .image {
-    max-width: 20%;
+  @media (max-width: 1025px){
+    .image {
+      width:105px;
+      height:175px;
+    }
+  }
+
+  @media (min-width: 1025px){
+    .image {
+      width:333px;
+      height:512px;
+    }
   }
