@@ -70,9 +70,9 @@ nav {
   position: fixed;
   text-align: center;
   justify-content: space-evenly;
+  background-color: #35006a;
   width: 100%;
   top: 100px;
-  background-color: #35006a;
   outline: solid 1px #FFF;  
   padding: 20px;
   z-index: 1000;
@@ -94,6 +94,10 @@ nav li {
   display: block;
 }
 
+main {
+  justify-content: space-around;
+}
+
 footer {
   position: inherit;
   bottom: 0px;
@@ -105,7 +109,6 @@ footer {
 footer a {
   padding: 0px 20px;
 }
-
 
 /* Home page */
 
@@ -139,7 +142,6 @@ footer a {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 10px;
-  max-width: 1000px; /* Hva skal jeg gjøre her? */
 }
 
 .image {
@@ -147,7 +149,31 @@ footer a {
   height: auto;
 }
 
+/* Product specific copied */
 
+.product-specific {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.product-specific_image {
+  max-width: 50%;
+}
+
+.product-specific_details {
+  max-width: 80%;
+}
+
+.price {
+  float: right;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 /* About */
 
@@ -175,15 +201,13 @@ footer a {
 
 /* Contact */
 
-
+.form {
+  flex-direction: row;
+}
 
 /* Media Queries */
 
-@media only screen and (min-width: 300px) and (max-width: 550px) {
-
-}
-
-@media only screen and (min-width: 551px) and (max-width: 900px) {
+@media only screen and (min-width: 551px) {
   nav {
     display: none;
     position: fixed;
@@ -202,15 +226,24 @@ footer a {
     padding: 12px 10px;
   }
 
-  .button {
+  .explore-button {
     margin-top: -50px;
   }
 
-  
+  .product-specific {
+    flex-direction: row;
+    margin: 30px 10%;
+    gap: 20px;
+  }
+
+  .buttons {
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
  
 }
 
-@media only screen and (min-width: 901px) and (max-width: 1300px) {
+@media only screen and (min-width: 901px) {
   
   header {
     justify-content: space-evenly;
@@ -231,13 +264,27 @@ footer a {
   }
 
   nav li {
-      display: inline-flex; /* eller inline -block*/
-      padding: 10px;
+      display: inline-block;
+      padding: 10px 18px;
   }
+
+  .movies {
+    margin: 0% 10%;
+  }
+
+  h1, h2, .selling-points{
+    margin: 20px 8%;
+  }
+
+  .product-specific_image {
+    max-width: 30%;
+  }
+
 }
 
-@media only screen and (min-width: 1301px) {
+@media only screen and (min-width: 1301px) {  /* Endre dette til større størrelse */
   body{
     max-width: 1400px;
+    margin: 0% 10%;
   }
 }
