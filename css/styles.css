@@ -1,85 +1,243 @@
 body {
-    background-color: #35006a;
-}
-
-h1, h2, li {
-    color: #FFF;
-}
-
-h1, h2 {
-    font-family: "Jockey One";
+    background: linear-gradient(to bottom, #35006a, #000 );
+    min-height: 100vh;
+    margin: 0px;
 }
 
 .jockey-one-regular {
-    font-family: "Jockey One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .jaldi-regular {
-    font-family: "Jaldi", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+.jaldi-regular {
+  font-family: "Jaldi", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1, 
+h2, 
+h3, 
+.price {
+    font-family: "Jockey One";
+}
+
+p,  
+a {
+  font-family: "Jaldi";
+  font-size: 0.9em;
+}
+
+body, 
+li, 
+p,
+a,  
+label {
+    color: #FFF;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, 
+h2, 
+.selling-points {
+  padding-left: 5%;
+}
+
+.title, 
+.price {
+  text-align: center;
+}
+
+/* Header */
+
+.logo {
+  max-width: 160px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 0px 25px 0px;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  top: 100px;
+  background-color: #35006a;
+  outline: solid 1px #FFF;  
+  padding: 20px;
+  z-index: 1000;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  padding: 10px 0px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+footer {
+  position: inherit;
+  bottom: 0px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  padding: 0px 20px;
+}
 
 
-  .logo {
-    max-width: 100px;
-    height: 50px;
-  }
+/* Home page */
 
-  .product {
-    width: 300px;
-  }
-  
-  .product-image {
-    max-width: 100%;
-  }
+.background-color {
+  background-color: #e4e0ff20;
+  padding: 5px 0px;
+}
 
-  img {
-    height: auto;
+.button {
+  outline: solid #FFF 1px;
+  border-radius: 16px;
+  padding: 2px 15px;
+  margin: 10px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.explore-button {
+  float: right;
+  margin-right: 5%;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  max-width: 1000px; /* Hva skal jeg gjøre her? */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* About */
+
+.about-content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 80%;
+}
+
+.picture {
+  margin: 5% 20%;
+  max-width: 100%;
+}
+
+.textbox {
+  max-width: 500px;
+  margin: 5% 20%;
+  outline: solid 1px #FFF;
+}
+
+.textbox h2 {
+  text-align: center;
+  padding: 0%;
+}
+
+/* Contact */
+
+
+
+/* Media Queries */
+
+@media only screen and (min-width: 300px) and (max-width: 550px) {
+
+}
+
+@media only screen and (min-width: 551px) and (max-width: 900px) {
+  nav {
+    display: none;
+    position: fixed;
+    text-align: center;
+    justify-content: space-evenly;
     width: 100%;
-    max-width: 100%;
-  }
-
-  .profile-pic {
-    border-radius: 50%;
-  }
-
-
-  .theater {
-    background-image: url('../images/header.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  
-  header{
-    position: relative;
-  }
-
-  nav{
-    background:#35006a;
-    top: 0px;
-    left: 30px;
+    top: 102px;
+    background-color: #35006a;
+    outline: solid 1px #FFF;  
+    padding: 10px 0px;
+    z-index: 1000;
   }
 
   nav li {
-    display:inline-block;
-    color: #FFF;
+    display: inline;
+    padding: 12px 10px;
   }
 
-
-  @media (max-width: 1025px){
-    .image {
-      width:105px;
-      height:175px;
-    }
+  .button {
+    margin-top: -50px;
   }
 
-  @media (min-width: 1025px){
-    .image {
-      width:333px;
-      height:512px;
-    }
+  
+ 
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
+  
+  header {
+    justify-content: space-evenly;
   }
+
+  header label {
+    display: none;
+    position: sticky;
+  }
+
+  nav {
+    display: block;
+    position: static;
+    padding: 0px;
+    outline: none;
+    max-width: 400px;
+    background-color: none;
+  }
+
+  nav li {
+      display: inline-flex; /* eller inline -block*/
+      padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1301px) {
+  body{
+    max-width: 1400px;
+  }
+}

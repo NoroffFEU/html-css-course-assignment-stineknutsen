@@ -18,45 +18,72 @@
 
 <body>
   <header>
-    <a href="index.html" class="logo">Square Eyes</a>
-    <img src="images/logo.png" alt="Logo of MyWebsite.com" class="logo"/>
+    <a href="index.html"> <img src="images/Logo.png" alt="Logo of Square Eyes" class="logo"/></a>
+    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
     <nav>
       <ul>
-        <li><a href="search.html">Search</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section>
-      <h1>Connecting Film-Lovers</h1>
-    </section>
-    <section>
-      <h2>New Releases</h1>
-        <img src="images/Batman_Cover.jpeg" alt="Batman cover" class="image"/>
-        <img src="images/Scream_Cover.jpeg" alt="Scream cover" class="image"/>
-        <img src="images/Hobbs_Cover.jpeg" alt="Hobbs & Shaw cover" class="image"/>
-
-    </section> 
-    <section>
-      <h2>On SALE this week</h1>
-    </section>
-    <section>
-      <img src="images/Godzilla_Cover.jpeg" alt="Godzilla cover" class="image"/>
-      <img src="images/Sweetheart_Cover.jpeg" alt="Sweetheart cover" class="image"/>
-      <img src="images/Toystory_Cover.jpeg" alt="Toy Story cover" class="image"/>
-    </section>
-  </main>
- 
-  <footer>
-    <nav>
-      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Explore all genres</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+    <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+
+  <main>
+    <section class="welcome-content background-color">
+      <h1>Connecting Film-Lovers</h1>
+      <p class="selling-points">Purchase high-quality films to watch online!</p>
+    </section>
+    <a href="products.html" class="button explore-button">Explore all genres</a>
+    <section class="content">
+      <h2>New Releases</h1>
+        <div class="movies background-color">
+          <div class="movie">
+            <a href="product-details.html"><img src="images/Batman_Cover.jpeg" alt="Batman cover" class="image"/></a>
+            <p class="title">The Batman</p>
+            <p class="price">$10</p>
+          </div>
+          <div class="movie">
+            <img src="images/Scream_Cover.jpeg" alt="Scream cover" class="image"/>
+            <p class="title">Scream</p>
+            <p class="price">$10</p>
+          </div>
+          <div class="movie">
+            <img src="images/Hobbs_Cover.jpeg" alt="Hobbs & Shaw cover" class="image"/>
+            <p class="title">Hobbs & Shaw</p>
+            <p class="price">$10</p>
+          </div>
+        </div>
+    </section> 
+    <section>
+      <h2>On SALE this week</h1>
+      <div class="movies background-color">
+        <div class="movie">
+          <img src="images/Godzilla_Cover.jpeg" alt="Godzilla cover" class="image"/>
+          <p class="title">Godzilla</p>
+          <p class="price">$7</p>
+        </div>
+        <div class="movie">
+          <img src="images/Sweetheart_Cover.jpeg" alt="Sweetheart cover" class="image"/>
+          <p class="title">Sweetheart</p>
+          <p class="price">$7</p>
+        </div>
+        <div class="movie">
+          <img src="images/Toystory_Cover.jpeg" alt="Toy Story cover" class="image"/>
+          <p class="title">Toy Story 4</p>
+          <p class="price">$7</p>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+  <footer>
+    <a href="about.html"><i class="fa-solid fa-circle-info"></i></a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
   </footer>
 </body>
 </html>

@@ -6,34 +6,55 @@
     <meta name="description" content="View the details for a high-quality film">
     <title>Square Eyes | Product Details</title>
     <link rel="stylesheet" href="css/styles.css">
-
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io-3/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io-3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io-3/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io-3/site.webmanifest">
+    <script src="https://kit.fontawesome.com/a5e5d5dde4.js" crossorigin="anonymous"></script>
+  </head>
 
 <body>
-    <header>
-      <a href="index.html" class="logo">Square Eyes</a>
-      <nav>
-        <ul>
-          <li><a href="search.html">Search</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="cart.html">Cart</a></li>
-        </ul>
+  <header>
+    <a href="index.html"> <img src="images/Logo.png" alt="Logo of Square Eyes" class="logo"/></a>
+    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home page</a></li>
+        <li><a href="products.html" class="active">Explore all genres</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
       </nav>
-    </header>
+      <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
   
     <main>
         <h1>Product Details</h1>
-        <img src="images/Batman_Cover.jpeg" alt="Batman cover" class="image"/>
-
+        <div class="background-color">
+          <div>
+            <h2>The Batman (2022)</h2>
+            <img src="images/Batman_Cover.jpeg" alt="Batman cover" class="image"/>
+          </div>
+          <div>
+            <h3>Action, 12, 2h 56m</h3>
+            <p>A serial killer targeting the elite of Gotham forces Batman to investigate. Prepare for a thrilling journey into the night  as "The Batman" redefines the legend for a new generation.</p>
+            <p>$10</p>
+          </div>
+        </div>
+        <div>
+          <a href="products.html" class="button">Continue shopping</a>
+          <a href="success.html" class="button">Add to cart</a>
+        </div>
     </main>
    
     <footer>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i></a>
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
     </footer>
   </body>
   </html>
