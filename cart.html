@@ -23,7 +23,7 @@
     <input type="checkbox" id="hamburger-menu">
     <nav>
       <ul>
-        <li><a href="index.html">Home page</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="products.html">Explore all genres</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -38,47 +38,52 @@
         <section class="heading">
           <h1>Shopping cart</h1>
         </section>
-        <section class="order-summary background-color">
-          <h2>Order summary</h2>
-            <div class="summary-sections">
-              <p>Title</p>
-              <p>Total price</p>
-            </div>
-            <div class="summary-content">
-              <img src="images/Batman_Cover.jpeg" alt="Batman cover" class="image summary-image"/>
-              <p>The Batman (2022)</p> 
-              <p>$10</p> 
-            </div>
-            <div class="summary-sections">
-              <a href="products.html" class="button">Continue shopping</a>
-              <p>Subtotal $10</p>
-            </div>
-        </section>
-      </section>
-      <section>
-        <h1>Contact and payment info</h1>
-        <form class="background-color form-wrapper">
-        <form action="/process_payment" method="post">
-          <section class="customer-info">
-            <label for="first_name">First name*</label>
-            <input type="text" name="first_name" id="first_name" class="form__input" required> 
-            <label for="last_name">Last name*</label>
-            <input type="text" name="last_name" id="last_name" class="form__input" required> 
-            <label for="email">Email*</label>
-            <input type="email" name="Email" id="email" class="form__input" required>  
+          <section>
+            <h2>1. Order summary</h2>
+            <section class="order-summary">
+              <div class="summary-sections">
+                <h3>Title</h3>
+                <h3>Total price</h3>
+              </div>
+              <div class="summary-content">
+                <div>
+                  <p>The Batman (2022)</p> 
+                  <img src="images/Batman_Cover.jpeg" alt="Batman cover" class="image summary-image"/>  
+                </div>
+                <div>
+                  <p class="specific-price">$10</p> 
+                </div>
+              </div>
+              <p class="specific-price">Total $10</p>
+            </section>
           </section>
-          <section class="payment-info">
-            <label for="card_number">Card number*</label>
-            <input type="text" name="card_number" id="card_number" class="form__input" required pattern="[0-9]" maxlength="16"> 
-            <label for="expiration_date">Expiration date*</label>
-            <input type="text" name="expiration_date" id="expiration_date" class="form__input" placeholder="MM/YY" pattern=""> 
-            <label for="cvv">CVV*</label>
-            <input type="text" name="cvv" id="cvv" class="form__input" required pattern="[0-9]" maxlength="3">  
-          </section>
-            <p>*must fill to proceed</p>
-            <a href="checkout-success.html" class="button">Check out</a>  
-        </form>
-      </section>
+          <section>
+            <h2>2. Contact and payment info</h2>
+            <form class="form-wrapper">
+            <form action="/process_payment" method="post">
+              <section class="customer-info">
+                <label for="first_name">First name*</label>
+                <input type="text" name="first_name" id="first_name" class="form__input" required> 
+                <label for="last_name">Last name*</label>
+                <input type="text" name="last_name" id="last_name" class="form__input" required> 
+                <label for="email">Email*</label>
+                <input type="email" name="Email" id="email" class="form__input" required>  
+              </section>
+              <section class="payment-info">
+                <label for="card_number">Card number*</label>
+                <input type="text" name="card_number" id="card_number" class="form__input" placeholder="1111 2222 3333 4444" required pattern="[0-9]" maxlength="16"> 
+                <label for="expiration_date">Expiration date*</label>
+                <input type="text" name="expiration_date" id="expiration_date" class="form__input" placeholder="MM/YY" pattern="[0-9]">
+                <label for="cvv">CVV*</label>
+                <input type="text" name="cvv" id="cvv" class="form__input" placeholder="123" required pattern="[0-9]" maxlength="3">  
+                <p>*must fill to proceed</p>
+              </section>
+            </form>
+            <section class="check-out">
+              <a href="checkout-success.html" class="button">Check out</a>  
+            </section>
+          </form>
+        </section>    
     </main>
    
     <footer>

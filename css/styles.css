@@ -28,10 +28,14 @@ h3,
   padding: 5px 0px;
 }
 
+h2, 
+.heading {
+  padding-left: 5%;
+}
+
 p,  
 a {
   font-family: "Jaldi";
-  font-size: 0.9em;
 }
 
 body, 
@@ -44,12 +48,6 @@ label {
 
 a {
   text-decoration: none;
-}
-
-h1, 
-h2, 
-.selling-points {
-  padding-left: 5%;
 }
 
 .title, 
@@ -89,7 +87,7 @@ nav {
   justify-content: space-evenly;
   background-color: #35006a;
   width: 100%;
-  top: 100px;
+  top: 105px;
   outline: solid 1px #FFF;  
   padding: 20px;
   z-index: 1000;
@@ -191,7 +189,7 @@ footer a {
   max-width: 80%;
 }
 
-.price {
+.specific-price {
   float: right;
 }
 
@@ -200,11 +198,15 @@ footer a {
   justify-content: space-evenly;
 }
 
+.no-margin {
+  padding-left: none;
+}
+
 /* Shopping cart */
 
 .order-summary {
-  padding: 5%;
-  outline: solid 1px #FFF;
+  padding: 5px 5%;
+  margin-bottom: 10px;
 }
 
 .summary-sections, 
@@ -223,13 +225,13 @@ footer a {
   flex-direction: column;
   margin: 5%;
   padding: 5px;
-  outline: solid 1px #FFF;
 }
 
-.checkout {
+.check-out {
   display: flex;
   flex-direction: column;
-  margin: 0% 5%;
+  margin: 0% 10%;
+  text-align: center;
 }
 
 .form-wrapper {
@@ -287,19 +289,7 @@ footer a {
 
 /* Media Queries */
 
-@media only screen and (min-width: 551px) {
-  nav {
-    display: none;
-    position: fixed;
-    text-align: center;
-    justify-content: space-evenly;
-    width: 100%;
-    top: 102px;
-    background-color: #35006a;
-    outline: solid 1px #FFF;  
-    padding: 10px 0px;
-    z-index: 1000;
-  }
+@media only screen and (min-width: 550px) {
 
   nav li {
     display: inline;
@@ -325,18 +315,28 @@ footer a {
     margin-right: 5%;
   }
 
-  .form-wrapper {
-    flex-direction: row;
-  }
-
   .contact-content {
     flex-direction: row;
     gap: 30px;
-
   }
 
-  .form {
+  .order-summary, 
+  .form-wrapper {
+    margin: 0px 10%;
+  }
+
+  .form-wrapper {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .form-wrapper p {
+    text-align: center;
+    margin: 0px 10%;
+  }
+
+  .check-out {
+    margin: 0px 30%;
   }
  
 }
@@ -349,7 +349,7 @@ footer a {
 
 }
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 900px) {
   
   header {
     justify-content: space-evenly;
@@ -366,7 +366,7 @@ footer a {
     padding: 0px;
     outline: none;
     max-width: 400px;
-    background-color: none;
+    background-color: #ffffff00;
   }
 
   nav li {
@@ -378,8 +378,8 @@ footer a {
     margin: 0% 10%;
   }
 
-  h1, h2, .selling-points{
-    margin: 20px 8%;
+  .heading, h2{
+    padding: 20px 10%;
   }
 
   .product-specific_image {
@@ -390,9 +390,18 @@ footer a {
     max-width: 30%;
   }
 
+  .order-summary, 
+  .form-wrapper {
+    margin: 0px 15%;
+  }
+
+  .check-out {
+    margin: 0px 40%;
+  }
+
 }
 
-@media only screen and (min-width: 1301px) {  /* Endre dette til større størrelse */
+@media only screen and (min-width: 1500px) {  /* Endre dette til større størrelse */
   body{
     max-width: 1400px;
     margin: 0% 10%;
