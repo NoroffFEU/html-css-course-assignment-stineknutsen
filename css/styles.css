@@ -23,6 +23,11 @@ h3,
     font-family: "Jockey One";
 }
 
+.heading {
+  background-color: #e4e0ff20;
+  padding: 5px 0px;
+}
+
 p,  
 a {
   font-family: "Jaldi";
@@ -52,7 +57,19 @@ h2,
   text-align: center;
 }
 
-/* Header */
+main {
+  justify-content: space-around;
+}
+
+.movies, 
+.order-summary, 
+.form-wrapper, 
+.product-specific {
+  background-color: #e4e0ff20;
+  padding: 5px 5px;
+}
+
+/* Header & Footer */
 
 .logo {
   max-width: 160px;
@@ -94,10 +111,6 @@ nav li {
   display: block;
 }
 
-main {
-  justify-content: space-around;
-}
-
 footer {
   position: inherit;
   bottom: 0px;
@@ -111,11 +124,6 @@ footer a {
 }
 
 /* Home page */
-
-.background-color {
-  background-color: #e4e0ff20;
-  padding: 5px 0px;
-}
 
 .button {
   outline: solid #FFF 1px;
@@ -149,7 +157,24 @@ footer a {
   height: auto;
 }
 
-/* Product specific copied */
+/* Search */
+
+.search, 
+.search-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-result {
+  margin: 5%;
+}
+
+.search-result img {
+  max-width: 50%;
+}
+
+/* Product specific */
 
 .product-specific {
   display: flex;
@@ -210,6 +235,15 @@ footer a {
 .form-wrapper {
   display: flex;
   flex-direction: column;
+}
+
+/* Checkout success */
+
+.checkout-success {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 /* About */
@@ -276,6 +310,10 @@ footer a {
     margin-top: -50px;
   }
 
+  .search-result img {
+    max-width: 40%;
+  }
+
   .product-specific {
     flex-direction: row;
     margin: 30px 10%;
@@ -294,7 +332,7 @@ footer a {
   .contact-content {
     flex-direction: row;
     gap: 30px;
-    
+
   }
 
   .form {
@@ -308,6 +346,7 @@ footer a {
     flex-direction: row;
     justify-content: space-evenly;
   }
+
 }
 
 @media only screen and (min-width: 901px) {
@@ -344,6 +383,10 @@ footer a {
   }
 
   .product-specific_image {
+    max-width: 30%;
+  }
+
+  .search-result img {
     max-width: 30%;
   }
 
