@@ -252,21 +252,22 @@ footer a {
 
 .about-content {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;  
   margin: 20px 5%;
   align-items: center;  
 }
 
 .textbox {
-  outline: solid 1px #FFF;
   margin: 20px 0px;
-  padding: 4px 20px;
 }
 
 .textbox h2 {
   text-align: center;
   padding: 0%;
+}
+
+.picture {
+  max-width: 100%;
 }
 
 /* Contact */
@@ -276,16 +277,14 @@ footer a {
   flex-direction: column;
   margin: 5%;
   align-items: center;
+  background-color: #e4e0ff20;
 }
 
-.contact-info {
-  min-width: 250px;
-}
-
-.form {
+.quick-contact {
+  display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 }
+
 
 /* Media Queries */
 
@@ -315,11 +314,6 @@ footer a {
     margin-right: 5%;
   }
 
-  .contact-content {
-    flex-direction: row;
-    gap: 30px;
-  }
-
   .order-summary, 
   .form-wrapper {
     margin: 0px 10%;
@@ -338,7 +332,29 @@ footer a {
   .check-out {
     margin: 0px 30%;
   }
- 
+
+  .about-content {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .textbox {
+    max-width: 50%;
+  }
+
+  .textbox h2 {
+    text-align: left;
+  }
+
+  .contact-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    column-gap: 50px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
@@ -399,6 +415,9 @@ footer a {
     margin: 0px 40%;
   }
 
+  .about-content {
+    margin: 20px 15%
+  }
 }
 
 @media only screen and (min-width: 1500px) {  /* Endre dette til større størrelse */
