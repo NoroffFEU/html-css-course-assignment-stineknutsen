@@ -46,6 +46,20 @@ label {
     color: #FFF;
 }
 
+.sale {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.new-price {
+  color: rgb(232, 255, 142);
+}
+
+.old-price {
+  text-decoration: rgb(255, 55, 55) 4px line-through;
+}
+
 a {
   text-decoration: none;
 }
@@ -65,6 +79,17 @@ main {
 .product-specific {
   background-color: #e4e0ff20;
   padding: 5px 5px;
+}
+
+.button {
+  outline: solid #FFF 1px;
+  border-radius: 16px;
+  padding: 2px 15px;
+  margin: 10px;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 /* Header & Footer */
@@ -122,17 +147,6 @@ footer a {
 }
 
 /* Home page */
-
-.button {
-  outline: solid #FFF 1px;
-  border-radius: 16px;
-  padding: 2px 15px;
-  margin: 10px;
-}
-
-.active {
-  text-decoration: underline;
-}
 
 .explore-button {
   float: right;
@@ -290,6 +304,10 @@ footer a {
 
 @media only screen and (min-width: 550px) {
 
+  nav ul {
+    padding: 14px 0px;
+  }
+
   nav li {
     display: inline;
     padding: 12px 10px;
@@ -297,6 +315,10 @@ footer a {
 
   .explore-button {
     margin-top: -50px;
+  }
+
+  .movies {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .search-result img {
@@ -388,6 +410,10 @@ footer a {
   nav li {
       display: inline-block;
       padding: 10px 18px;
+  }
+
+  .explore-button {
+    margin-right: 10%;
   }
 
   .movies {
