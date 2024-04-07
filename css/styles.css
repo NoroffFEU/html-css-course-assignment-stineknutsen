@@ -62,10 +62,6 @@ label {
   justify-content: center;
 }
 
-.new-price {
-  color: rgb(232, 255, 142);
-}
-
 .old-price {
   text-decoration: rgb(255, 55, 55) 4px line-through;
 }
@@ -74,9 +70,10 @@ a {
   text-decoration: none;
 }
 
+.new-price, 
 label:hover, 
 a:hover {
-  color: #46afff;
+  color: #5db9ff;
 }
 
 .logo:hover, 
