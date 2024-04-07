@@ -2,6 +2,8 @@ body {
     background: linear-gradient(to bottom, #35006a, #000 );
     min-height: 100vh;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
 }
 
 .jockey-one-regular {
@@ -51,6 +53,12 @@ label {
   display: flex;
   justify-content: center;
   gap: 5px;
+  padding: 0px;
+}
+
+.nosale {
+  display: flex;
+  justify-content: center;
 }
 
 .new-price {
@@ -71,6 +79,7 @@ a {
 }
 
 main {
+  flex-grow: 1;
   justify-content: space-around;
 }
 
@@ -80,6 +89,11 @@ main {
 .product-specific {
   background-color: #e4e0ff20;
   padding: 5px 5px;
+}
+
+.logo, 
+.button {
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
 }
 
 .button {
@@ -136,9 +150,7 @@ nav li {
 }
 
 footer {
-  position: inherit;
-  bottom: 0px;
-  padding: 20px 30px;
+  padding: 20px;
   display: flex;
   justify-content: center;
 }
@@ -168,9 +180,15 @@ footer a {
   overscroll-behavior-inline: contain;
 }
 
+.movie {
+  display: grid;
+}
+
 .image {
   width: 100%;
   height: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Search */
@@ -196,6 +214,7 @@ footer a {
   display: flex;
   flex-direction: column;
   margin: 20px 0px;
+  padding: 0px 15px;
   align-items: center;
 }
 
@@ -208,6 +227,7 @@ footer a {
   max-width: 80%;
 }
 
+.contact-box h2, 
 .product-specific_details h2 {
   padding: 0%;
 }
@@ -269,7 +289,6 @@ footer a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  align-items: center;
 }
 
 /* About */
@@ -292,16 +311,28 @@ footer a {
 
 .picture {
   max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 2px 2px 15px #cccccc50;
 }
 
 /* Contact */
 
 .contact-content {
   display: flex;
+  padding: 10px;
   flex-direction: column;
   margin: 5%;
   align-items: center;
   background-color: #e4e0ff20;
+}
+
+.contact-box {
+  outline: solid 1px #FFF;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px #ffffff75;
+  padding: 10px;
+  margin: 10px;
+  min-width: 250px;
 }
 
 .quick-contact {
