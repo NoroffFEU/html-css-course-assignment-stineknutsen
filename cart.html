@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Connecting Film-lovers. View your shopping cart and complete your purchase!">
+    <title>Square Eyes | Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jaldi&family=Jockey+One&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io-3/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io-3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io-3/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io-3/site.webmanifest">
+    <script src="https://kit.fontawesome.com/a5e5d5dde4.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+  <header>
+    <a href="index.html"> <img src="images/Logo.png" alt="Logo of Square Eyes" class="logo"/></a>
+    <label for="hamburger-menu"><i class="fa-solid fa-bars"></i></label>
+    <input type="checkbox" id="hamburger-menu">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Explore all genres</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      </nav>
+      <a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+  </header>
+  
+    <main>
+      <section>
+        <section class="heading">
+          <h1>Shopping cart</h1>
+        </section>
+          <section>
+            <h2>1. Order summary</h2>
+            <section class="order-summary">
+              <div class="summary-sections">
+                <h3>Title</h3>
+                <h3>Total price</h3>
+              </div>
+              <div class="summary-content">
+                <div>
+                  <a href="product-details.html">
+                    <p>The Batman (2022)</p> 
+                    <img src="images/Batman_Cover.jpeg" alt="Batman cover" class="image summary-image"/>    
+                  </a>
+                </div>
+                <div>
+                  <p class="specific-price">$10</p> 
+                </div>
+              </div>
+              <p class="specific-price">Total $10</p>
+            </section>
+          </section>
+          <section>
+            <h2>2. Contact and payment info</h2>
+            <form class="form-wrapper" action="/process_payment" method="post">
+              <section class="customer-info">
+                <label for="first_name">First name*</label>
+                <input type="text" name="first_name" id="first_name" required> 
+                <label for="last_name">Last name*</label>
+                <input type="text" name="last_name" id="last_name" required> 
+                <label for="email">Email*</label>
+                <input type="email" name="Email" id="email" required>  
+              </section>
+              <section class="payment-info">
+                <label for="card_number">Card number*</label>
+                <input type="text" name="card_number" id="card_number" placeholder="1111 2222 3333 4444" required pattern="[0-9]" maxlength="16"> 
+                <label for="expiration_date">Expiration date*</label>
+                <input type="text" name="expiration_date" id="expiration_date" placeholder="MM/YY" pattern="[0-9]">
+                <label for="cvv">CVV*</label>
+                <input type="text" name="cvv" id="cvv" placeholder="123" required pattern="[0-9]" maxlength="3">  
+                <p>*must fill to proceed</p>
+              </section>
+              </form>
+              <section class="check-out">
+              <a href="checkout-success.html" class="button">Check out</a>  
+              </section>
+          </section>
+      </section>    
+    </main>
+   
+    <footer>
+      <a href="about.html"><i class="fa-solid fa-circle-info"></i></a>
+      <a href="contact.html"><i class="fa-solid fa-envelope"></i></a>
+    </footer>
+</body>
+</html>
