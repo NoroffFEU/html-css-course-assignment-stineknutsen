@@ -59,8 +59,7 @@
           </section>
           <section>
             <h2>2. Contact and payment info</h2>
-            <form class="form-wrapper">
-            <form action="/process_payment" method="post">
+            <form class="form-wrapper" action="/process_payment" method="post">
               <section class="customer-info">
                 <label for="first_name">First name*</label>
                 <input type="text" name="first_name" id="first_name" required> 
@@ -78,12 +77,12 @@
                 <input type="text" name="cvv" id="cvv" placeholder="123" required pattern="[0-9]" maxlength="3">  
                 <p>*must fill to proceed</p>
               </section>
-            </form>
-            <section class="check-out">
+              </form>
+              <section class="check-out">
               <a href="checkout-success.html" class="button">Check out</a>  
-            </section>
-          </form>
-        </section>    
+              </section>
+          </section>
+      </section>    
     </main>
    
     <footer>
